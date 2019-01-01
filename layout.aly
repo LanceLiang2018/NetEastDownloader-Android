@@ -1,0 +1,47 @@
+{
+  LinearLayout;
+  layout_height="fill";
+  layout_width="fill";
+  orientation="vertical";
+  {
+    LinearLayout;
+    layout_width="fill";
+    orientation="horizontal";
+    {
+      Button;
+      id="btn";
+      text="搜索";
+    };
+    {
+      EditText;
+      singleLine="true";
+      hint="输入后按回车开始搜索";
+      --text="茶理理";
+      id="text";
+      imeOptions="actionSearch";
+      layout_width="fill_parent";
+    };
+  };
+--[[
+  {
+    LinearLayout;
+    gravity="center";
+    orientation="vertical";
+    layout_width="fill";
+    {
+      Button;
+      text="加载更多";
+      id="btn_more";
+    };
+  };]]
+  {
+    LinearLayout;
+    orientation="horizontal";
+    layout_width="fill";
+    {
+      ListView;
+      layout_width="fill";
+      id="list";
+    };
+  };
+};
